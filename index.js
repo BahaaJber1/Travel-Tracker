@@ -26,6 +26,7 @@ const result =  db.query("SELECT * FROM visited_countries", (err, res) => {
     console.log("Total countries:", total);
   }
 });
+db.end();
 
 const app = express();
 const port = 3000;
